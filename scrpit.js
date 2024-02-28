@@ -42,3 +42,8 @@ function desencriptar(fraseEncriptada){
     }
     return fraseEncriptada;
 }
+
+function btnLimpiar(){
+    campo_mensaje.value = '';
+    campo_texto.value = '';
+}
