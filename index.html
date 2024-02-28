@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/Logo-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Encriptador Alura ONE</title>
+</head>
+<body>
+    <header> 
+        <img src="./imagenes/Logo-1.png">
+        <h1 class="titulo">Encriptador Alura ONE</h1>
+    </header>
+    <main class="main">
+        <section>
+            <textarea id="texto-encriptado" class="campo-texto" placeholder="Ingrese texto a encriptar o encriptado"></textarea>
+            <div class="btn">
+            <button class="btnEncriptar" onclick="btnEncriptar()"><img src="imagenes/encriptar.png"></button>
+            <button class="btnDesencriptar" onclick="btnDesencriptar()"><img src="imagenes/desencriptar.png"></button>    
+            </div>
+        </section>
+        <section class="campo-mensaje">
+            <textarea id="campo-mensaje" class="mensaje"></textarea>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">© Copyright</p>
+        <p class="copyright">Ezequiel Vermeulen</p>
+    </footer>
+    <script src="scrpit.js"></script>
+</body>
+</html>

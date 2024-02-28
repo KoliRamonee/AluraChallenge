@@ -1,0 +1,99 @@
+body {
+    background-image: url("imagenes/NvN.gif");
+    background-repeat: repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 130px;
+    margin: 0 auto;
+    bottom: 60px;
+    right: 2px;
+    padding: 0px 0;
+    text-align: center;
+}
+
+.main{
+    padding: 20px;
+}
+
+h1{
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.campo-texto{
+    border-radius: 8%;
+    border-style: dotted;
+    border-color: green;
+    border-width: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    width: calc(100% - 40px); 
+    height: 80px;
+    padding: 10px;
+    background-color: transparent;   
+}
+
+.btn{
+    text-align: center;
+}
+
+.btnEncriptar{
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+.btnDesencriptar{
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+.mensaje{
+    border-radius: 8%;
+    border-style: dotted;
+    border-color: red;
+    border-width: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;  
+    text-align: center;
+    width: calc(100% - 40px); 
+    height: 80px;
+    padding: 10px;  
+    background-color: transparent;  
+}
+
+.copyright{
+    color: white ;
+    font-size: 13px;
+    margin: 0px;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    .titulo, .btnDesencriptar, .btnEncriptar, .header, .main, .footer{
+        width: auto;
+    }
+}
