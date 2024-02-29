@@ -47,3 +47,9 @@ function btnLimpiar(){
     campo_mensaje.value = '';
     campo_texto.value = '';
 }
+
+function btnCopiar(){
+    var textoOriginal = document.getElementById("campo-mensaje").value;
+    document.getElementById("texto-encriptado").value = textoOriginal;
+    campo_mensaje.value = '';
+}
