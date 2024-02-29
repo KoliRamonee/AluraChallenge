@@ -45,7 +45,7 @@ h1{
     color: white;
     text-align: center;
     width: calc(100% - 40px); 
-    height: 80px;
+    height: 150px;
     padding: 10px;
     background-color: transparent;   
 }
@@ -80,7 +80,7 @@ h1{
     color: red;  
     text-align: center;
     width: calc(100% - 40px); 
-    height: 80px;
+    height: 150px;
     padding: 10px;  
     background-color: transparent;  
 }
