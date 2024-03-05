@@ -12,7 +12,6 @@ const matriz_code=[
 function btnEncriptar(){
     const texto = encriptar(campo_texto.value);
     campo_mensaje.value = texto;
-    campo_texto.value = '';
 }
 
 function encriptar(fraseEncriptada){
@@ -25,6 +24,7 @@ function encriptar(fraseEncriptada){
         }
     }
     return fraseEncriptada;
+    campo_texto.value = '';
 }
 
 function btnDesencriptar(){
@@ -42,6 +42,7 @@ function desencriptar(fraseEncriptada){
         }
     }
     return fraseEncriptada;
+    campo_texto.value = '';
 }
 
 function btnLimpiar(){
