@@ -98,6 +98,7 @@ h1{
 }
 
 .btnCopiar{
+    text-transform: lowercase;
     margin: 10px;
     background-color: transparent;
     border: none;
