@@ -53,6 +53,13 @@ function btnLimpiar(){
 
 function btnCopiar(){
     var textoOriginal = document.getElementById("campo-mensaje").value;
+    navigator.clipboard.writeText(textoOriginal)
+            .then(function() {
+            console.log('Texto copiado al portapapeles exitosamente');
+            })
+                .catch(function(err) {
+                console.error('Error al copiar el texto al portapapeles: ', err);
+                });
     document.getElementById("texto-encriptado").value = textoOriginal;
     campo_mensaje.value = '';
 }
