@@ -52,4 +52,5 @@ function btnCopiar(){
     navigator.clipboard.writeText(textoOriginal)
     campo_texto.value= '';
     campo_mensaje.value = '';
+    alert("Se copió el texto encriptado");
 }
