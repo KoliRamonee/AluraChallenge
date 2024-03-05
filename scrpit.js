@@ -12,6 +12,7 @@ const matriz_code=[
 function btnEncriptar(){
     const texto = encriptar(campo_texto.value);
     campo_mensaje.value = texto;
+    campo_texto.value = '';
 }
 
 function encriptar(fraseEncriptada){
