@@ -36,6 +36,7 @@ h1{
 }
 
 .campo-texto{
+    text-transform: lowercase;
     border-radius: 8%;
     border-style: dotted;
     border-color: green;
@@ -71,6 +72,7 @@ h1{
 }
 
 .mensaje{
+    text-transform: lowercase;
     border-radius: 8%;
     border-style: dotted;
     border-color: red;
