@@ -21,10 +21,11 @@ function encriptar(fraseEncriptada){
                 matriz_code[i][0],
                 matriz_code[i][1]
             )
+             campo_texto.value = '';
         }
     }
     return fraseEncriptada;
-    campo_texto.value = '';
+
 }
 
 function btnDesencriptar(){
@@ -39,10 +40,10 @@ function desencriptar(fraseEncriptada){
                 matriz_code[i][1],
                 matriz_code[i][0]
             )
+               campo_texto.value = '';
         }
     }
     return fraseEncriptada;
-    campo_texto.value = '';
 }
 
 function btnLimpiar(){
