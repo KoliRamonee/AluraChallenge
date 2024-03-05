@@ -1,6 +1,17 @@
 const campo_texto = document.querySelector("#texto-encriptado");
 const campo_mensaje = document.querySelector("#campo-mensaje");
 
+campo_texto.addEventListener("keyup", (event) => {
+    const caracter = event.key;
+    const regex = /[^\w\s]/; // Coincide con caracteres especiales
+ 
+     if (regex.test(caracter)) {
+     event.preventDefault();
+     console.log(caracter);
+     campo_texto.value = '';
+     }
+});
+
 function btnEncriptar(){
     const textoEncriptado =encriptar(campo_texto.value);
     campo_mensaje.value = textoEncriptado;
