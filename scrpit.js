@@ -9,8 +9,6 @@ function btnEncriptar(){
 
 function encriptar(fraseEncriptada){
     let matriz_code = [["e","enter"],["i","ines"],["a","ai"],["o","ober"],["u","ufat"]];
-   /* stringEncriptado = stringEncriptado.tolowerCase()*/
-
     for(let i=0; i < matriz_code.length;i++){
         if(fraseEncriptada.includes(matriz_code[i][0])){
             fraseEncriptada = fraseEncriptada.replaceAll(matriz_code[i][0], matriz_code[i][1]);
@@ -27,8 +25,6 @@ function btnDesencriptar(){
 
 function desencriptar(fraseEncriptada){
     let matrizCodgo = [["e","enter"],["i","ines"],["a","ai"],["o","ober"],["u","ufat"]];
-    /*stringDesencriptado = stringDesencriptado.tolowerCase()*/
-
     for(let i=0; i < matrizCodgo.length;i++){
         if(fraseEncriptada.includes(matrizCodgo[i][1])){
             fraseEncriptada = fraseEncriptada.replaceAll(matrizCodgo[i][1], matrizCodgo[i][0]);
