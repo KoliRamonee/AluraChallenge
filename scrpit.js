@@ -4,12 +4,11 @@ const campo_mensaje = document.querySelector("#campo-mensaje");
 campo_texto.addEventListener("keyup", (event) => {
     const caracter = event.key;
     const regex = /[^\w\s]/; // Coincide con caracteres especiales
- 
-     if (regex.test(caracter)) {
-     event.preventDefault();
-     console.log(caracter);
-     campo_texto.value = campo_texto.value.slice(0,-1);
-     }
+         if (regex.test(caracter)) {
+         event.preventDefault();
+         console.log(caracter);
+         campo_texto.value = campo_texto.value.slice(0,-1);
+         }
 });
 
 function btnEncriptar(){
