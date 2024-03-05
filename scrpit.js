@@ -10,37 +10,36 @@ const matriz_code=[
 ];
 
 function btnEncriptar(){
-    const texto = encriptar(campo_texto.value);
-    campo_mensaje.value = texto;
+    const textoEncriptado =encriptar(campo_texto.value);
+    campo_mensaje.value = textoEncriptado;
+    campo_texto.value="";
 }
 
 function encriptar(fraseEncriptada){
-    for(let i = 0; i < matriz_code.length; i++){
+    let matriz_code = [["e","enter"],["i","ines"],["a","ai"],["o","ober"],["u","ufat"]];
+   /* stringEncriptado = stringEncriptado.tolowerCase()*/
+
+    for(let i=0; i < matriz_code.length;i++){
         if(fraseEncriptada.includes(matriz_code[i][0])){
-            fraseEncriptada = fraseEncriptada.replaceAll(
-                matriz_code[i][0],
-                matriz_code[i][1]
-            )
-             campo_texto.value = '';
+            fraseEncriptada = fraseEncriptada.replaceAll(matriz_code[i][0], matriz_code[i][1]);
         }
     }
     return fraseEncriptada;
-
 }
 
 function btnDesencriptar(){
-    const texto = desencriptar(campo_texto.value);
-    campo_mensaje.value = texto;
+    const textoEncriptado =desencriptar(campo_texto.value);
+    campo_mensaje.value = textoEncriptado;
+    campo_texto.value="";
 }
 
 function desencriptar(fraseEncriptada){
-    for(let i = 0; i < matriz_code.length; i++){
-        if(fraseEncriptada.includes(matriz_code[i][1])){
-            fraseEncriptada = fraseEncriptada.replaceAll(
-                matriz_code[i][1],
-                matriz_code[i][0]
-            )
-               campo_texto.value = '';
+    let matrizCodgo = [["e","enter"],["i","ines"],["a","ai"],["o","ober"],["u","ufat"]];
+    /*stringDesencriptado = stringDesencriptado.tolowerCase()*/
+
+    for(let i=0; i < matrizCodgo.length;i++){
+        if(fraseEncriptada.includes(matrizCodgo[i][1])){
+            fraseEncriptada = fraseEncriptada.replaceAll(matrizCodgo[i][1], matrizCodgo[i][0]);
         }
     }
     return fraseEncriptada;
