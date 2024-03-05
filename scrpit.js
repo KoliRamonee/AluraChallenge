@@ -8,7 +8,7 @@ campo_texto.addEventListener("keyup", (event) => {
      if (regex.test(caracter)) {
      event.preventDefault();
      console.log(caracter);
-     campo_texto.value = '';
+     campo_texto.value = campo_texto.value.slice(0,-1);
      }
 });
 
